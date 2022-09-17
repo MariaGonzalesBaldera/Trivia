@@ -20,8 +20,12 @@ while ContinuarTrivia==True:
 ##--------------Pregunta1-----------------
     print(f'Intento N° {intentos}')
     time.sleep(0.2)
-    print(f' Empezarás con una puntuación aleatoria de {puntuacion} puntos')
+    print(f'Empezarás con una puntuación aleatoria de {puntuacion} puntos')
     
+    #Contador
+    print('Cargando pregunta')
+    conta('1 2 3\n')
+
     txt1=BLUE+'¿Cuál es el animal nacional de Australia? \n'+RESET
     meca(txt1)
 
@@ -118,7 +122,7 @@ while ContinuarTrivia==True:
     time.sleep(0.2)
 
 
-    respuestaTrivia= input(MAGENTA+f'{nombre}, Llegamos al final de la trivia, si desea repetir responde "si",\n caso contrario presione cualquier tecla \n \n'+RESET).lower()
+    respuestaTrivia= input(MAGENTA+f'{nombre}, Llegamos al final de la trivia, si desea repetir responde "si",\n caso contrario presione cualquier tecla \n'+RESET).lower()
     time.sleep(0.2)
     if respuestaTrivia!='si':
         ContinuarTrivia=False

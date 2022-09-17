@@ -28,6 +28,11 @@ def meca(txt):
         time.sleep(0.03)
 
 
+#letra x letra del cargando
+def conta(txt):
+    for x in txt:
+        print(x, end="", flush=True)
+        time.sleep(0.5)
 
 
 
