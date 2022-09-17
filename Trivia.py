@@ -175,12 +175,12 @@ while ContinuarTrivia==True:
     while rpt5 not in ('A','B','C','D','X'):
         rpt5=input(RED+f'{nombre}, Debes elegir una letra válida \n'+RESET)
         time.sleep(0.2)
-    if rpt5=='A':
+    if rpt5=='C':
             print(YELLOW+f'Excelente {nombre}'+RESET)
             puntuacion+=10
             time.sleep(0.2)
 
-    elif rpt5=='B' or rpt5=='C' or rpt5=='D' :
+    elif rpt5=='A' or rpt5=='B' or rpt5=='D' :
         for letra, alter in pregunta5.items():
             if rpt5==letra:
                 print(RED+alter ,'no invento la bombilla '+RESET)
