@@ -194,6 +194,13 @@ while ContinuarTrivia==True:
     print(YELLOW+f'Obtuviste un apuntuación de {puntuacion} puntos \n \n'+RESET)
     time.sleep(0.2)
 
+##BonusTrack
+    meca("BonusTrack")
+    meca('\nPor llegar a este punto se te asignara automaticamente uno de estos puntajes "5", "10", "20", "30","40" ')
+    extra=[5,10,20,30,40]
+    bonus=random.choice(extra)
+    puntuacion+=bonus
+    meca(f'\nTu puntuación es {puntuacion}\n')
 
 ##FINAL
     respuestaTrivia= input(MAGENTA+f'{nombre}, Llegamos al final de la trivia, si desea repetir responde "si",\n caso contrario presione enter \n'+RESET).lower()
