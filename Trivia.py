@@ -162,7 +162,7 @@ while ContinuarTrivia==True:
 ##--------------Pregunta5-----------------
     print('Cargando pregunta')
     conta('1 2 3\n')
-    txt5=BLUE+'¿Cuál es el país más grande del mundo? \n'+RESET
+    txt5=BLUE+'¿Quién inventó la bombilla? \n'+RESET
     
     meca(txt5)
 
@@ -183,7 +183,7 @@ while ContinuarTrivia==True:
     elif rpt5=='B' or rpt5=='C' or rpt5=='D' :
         for letra, alter in pregunta5.items():
             if rpt5==letra:
-                print(RED+alter ,'no es el pais mas grande del mundo '+RESET)
+                print(RED+alter ,'no invento la bombilla '+RESET)
                 puntuacion-=5  
                 time.sleep(0.2)
 
@@ -196,7 +196,7 @@ while ContinuarTrivia==True:
 
 
 ##FINAL
-    respuestaTrivia= input(MAGENTA+f'{nombre}, Llegamos al final de la trivia, si desea repetir responde "si",\n caso contrario presione cualquier tecla \n'+RESET).lower()
+    respuestaTrivia= input(MAGENTA+f'{nombre}, Llegamos al final de la trivia, si desea repetir responde "si",\n caso contrario presione enter \n'+RESET).lower()
     time.sleep(0.2)
     if respuestaTrivia!='si':
         ContinuarTrivia=False
