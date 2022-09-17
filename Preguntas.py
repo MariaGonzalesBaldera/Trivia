@@ -21,6 +21,24 @@ pregunta3={
     'C':'Oro',
     'D':'Cobre'
     }
+
+#¿Quién pintó “la última cena”?
+pregunta4={
+    'A':'Pablo Picasso',
+    'B':'Salvador Dalí',
+    'C':'Leonardo da Vinci',
+    'D':'Miguel Angel'
+    }
+
+#¿Quién inventó la bombilla?
+pregunta5={
+    'A':'Nikola Tesla',
+    'B':'Thales de Mileto',
+    'C':'Thomas Edison',
+    'D':'Benjamin Franklin'
+    }
+
+
 #####creando una funcion para mostrar letra x letra
 def meca(txt):
     for x in txt:

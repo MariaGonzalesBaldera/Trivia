@@ -57,7 +57,8 @@ while ContinuarTrivia==True:
     time.sleep(0.2)
 
 ##--------------Pregunta2-----------------
-
+    print('Cargando pregunta')
+    conta('1 2 3\n')
     txt2=BLUE+'¿Cuál es el país más grande del mundo? \n'+RESET
     
     meca(txt2)
@@ -91,7 +92,8 @@ while ContinuarTrivia==True:
     time.sleep(0.2)
 
 ##--------------Pregunta3-----------------
-    
+    print('Cargando pregunta')
+    conta('1 2 3\n')
     txt3=BLUE+'¿Cuál fue el primer metal que empleó el hombre? \n'+RESET
     
     meca(txt3)
@@ -121,7 +123,79 @@ while ContinuarTrivia==True:
     print(YELLOW+f'Obtuviste un apuntuación de {puntuacion} puntos \n \n'+RESET)
     time.sleep(0.2)
 
+##--------------Pregunta4-----------------
+    print('Cargando pregunta')
+    conta('1 2 3\n')
+    txt4=BLUE+'¿Quién pintó “la última cena”? \n'+RESET
+    
+    meca(txt4)
 
+    for letra, alter in pregunta4.items():
+        print(CYAN+letra, '-', alter+RESET)
+        time.sleep(0.2)
+
+    rpt4=input(BLACK+'Elige "A", "B", "C" ó "D" \n'+RESET).upper()
+    time.sleep(0.2)
+    while rpt4 not in ('A','B','C','D','X'):
+        rpt4=input(RED+f'{nombre}, Debes elegir una letra válida \n'+RESET)
+        time.sleep(0.2)
+    if rpt4=='C':
+            print(YELLOW+f'Excelente {nombre}'+RESET)
+            puntuacion+=10
+            time.sleep(0.2)
+
+    elif rpt4=='A' or rpt4=='B' or rpt4=='D' :
+        for letra, alter in pregunta4.items():
+            if rpt4==letra:
+                print(RED+alter ,'no pintó la última cena'+RESET)
+                puntuacion-=5  
+                time.sleep(0.2)
+
+    elif rpt4=='X':
+        meca(MAGENTA+f'Hola {nombre}, Este es un atajo secreto \n Por descubrirlo, le llevaras 20 puntos adicionales\n'+RESET)
+        puntuacion+=20
+    
+    print(YELLOW+f'Obtuviste un apuntuación de {puntuacion} puntos \n \n'+RESET)
+    time.sleep(0.2)
+
+
+##--------------Pregunta5-----------------
+    print('Cargando pregunta')
+    conta('1 2 3\n')
+    txt5=BLUE+'¿Cuál es el país más grande del mundo? \n'+RESET
+    
+    meca(txt5)
+
+    for letra, alter in pregunta5.items():
+        print(CYAN+letra, '-', alter+RESET)
+        time.sleep(0.2)
+
+    rpt5=input(BLACK+'Elige "A", "B", "C" ó "D" \n'+RESET).upper()
+    time.sleep(0.2)
+    while rpt5 not in ('A','B','C','D','X'):
+        rpt5=input(RED+f'{nombre}, Debes elegir una letra válida \n'+RESET)
+        time.sleep(0.2)
+    if rpt5=='A':
+            print(YELLOW+f'Excelente {nombre}'+RESET)
+            puntuacion+=10
+            time.sleep(0.2)
+
+    elif rpt5=='B' or rpt5=='C' or rpt5=='D' :
+        for letra, alter in pregunta5.items():
+            if rpt5==letra:
+                print(RED+alter ,'no es el pais mas grande del mundo '+RESET)
+                puntuacion-=5  
+                time.sleep(0.2)
+
+    elif rpt5=='X':
+        meca(MAGENTA+f'Hola {nombre}, Este es un atajo secreto \n Por descubrirlo, le llevaras 20 puntos adicionales\n'+RESET)
+        puntuacion+=20
+    
+    print(YELLOW+f'Obtuviste un apuntuación de {puntuacion} puntos \n \n'+RESET)
+    time.sleep(0.2)
+
+
+##FINAL
     respuestaTrivia= input(MAGENTA+f'{nombre}, Llegamos al final de la trivia, si desea repetir responde "si",\n caso contrario presione cualquier tecla \n'+RESET).lower()
     time.sleep(0.2)
     if respuestaTrivia!='si':
